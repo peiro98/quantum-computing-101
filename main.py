@@ -4,8 +4,9 @@ from core.plot import *
 
 if __name__ == '__main__':
     fig = plt.figure(dpi=300)
+    plot = fig.add_subplot('111', projection='3d')
 
-    plot = plot_bloch_sphere(fig)
+    plot_bloch_sphere(plot)
 
     # basis
     plot_qubit(plot, zero_qubit, color='xkcd:red', label='|0⟩')

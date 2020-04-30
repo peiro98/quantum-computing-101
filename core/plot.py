@@ -50,9 +50,7 @@ def plot_qubit(plot, qubit, color, label=None):
                 arrow_length_ratio=0.1, label=label)
 
 
-def plot_bloch_sphere(fig):
-    plot = fig.add_subplot(111, projection='3d')
-
+def plot_bloch_sphere(plot):
     draw_sphere(plot)
 
     plot.set_xlim([-1, 1])

@@ -1,24 +1,24 @@
 import numpy as np
 
-H = 1 / np.sqrt(2) * np.array([[1, 1],
-                               [1, -1]])
+H = 1 / np.sqrt(2) * np.array([[1.0, 1.0],
+                               [1.0, -1.0]], dtype=np.complex64)
 
 # Pauli X
-X = np.array([[0, 1],
-              [1, 0]])
+X = np.array([[0, 1.0],
+              [1.0, 0]], dtype=np.complex64)
 
 # Pauli Y
 Y = np.array([[0, -1j],
-              [1j, 0]])
+              [1j, 0]], dtype=np.complex64)
 
 # Pauli Z
-Z = np.array([[1, 0],
-              [0, -1]])
+Z = np.array([[1.0, 0],
+              [0, -1.0]], dtype=np.complex64)
 
 
 def phase_shift(phi: np.real):
-    return np.array([[1, 0],
-                     [0, np.e ** (1.0j * phi)]])
+    return np.array([[1.0, 0],
+                     [0, np.e ** (1.0j * phi)]], dtype=np.complex64)
 
 
 # S is a pi/2 rotation about the z-axis
@@ -37,4 +37,4 @@ Tdg = phase_shift(-np.pi / 4)
 Cx = np.array([[1, 0, 0, 0],
                [0, 1, 0, 0],
                [0, 0, 0, 1],
-               [0, 0, 1, 0]])
+               [0, 0, 1, 0]], dtype=np.complex64)
