@@ -7,3 +7,4 @@ A git repo with exercises and code developed during the "Introduzione all'inform
 * [Quantum registers](https://nbviewer.jupyter.org/github/peiro98/quantum-computing-101/blob/master/notebooks/quantum_registers.ipynb)
 * [Quantum gates](https://nbviewer.jupyter.org/github/peiro98/quantum-computing-101/blob/master/notebooks/quantum_gates.ipynb)
 * [CNOT gate](https://nbviewer.jupyter.org/github/peiro98/quantum-computing-101/blob/master/notebooks/CNOT_gate.ipynb)
+* [Quantum circuits](https://nbviewer.jupyter.org/github/peiro98/quantum-computing-101/blob/master/notebooks/quantum_circuits.ipynb)
